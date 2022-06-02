@@ -24,13 +24,22 @@ models:
     description: "Calculate Monthly average NAV, Repurchase & Sale Price for each scheme."
     columns:
       - name: nav_month
-        description: ""The primary key for this table""
+        description: "The primary key for this table"
         tests:
           - not_null
+
 
   - name: milestone1_2
     description: "Find out each scheme’s Max and Min NAV value and Date it occurred"
     columns:
-      - name: id
-        description: ""The primary key for this table""
+      - name: nav_date
+        description: "The primary key for this table"
         tests:
+
+  - name: milestone3
+    description: "Find out each scheme’s Max and Min NAV value and Date it occurred"
+    columns:
+      - name: nav_date
+        description: "The primary key for this table"
+        tests:
+          - not_null
